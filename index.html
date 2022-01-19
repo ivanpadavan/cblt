@@ -5,7 +5,7 @@
     <pre id="keycode" style="font-size: 200%"></pre>
   </body>
   <script>
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keydown', function(e) {
       document.getElementById('keycode').innerHTML = JSON.stringify({ keycode: e.keyCode, key: e.key }, null, 4);
     })
   </script>
